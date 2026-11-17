@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>极品反差-穿搭与生活图鉴</title>
+<meta name="description" content="极品反差聚焦同一人物在不同场景里的形象反差：从通勤西装到周末街头、从镜头前到日常侧拍，梳理风格切换的判断方法、单品对照与体验记录，附更新与问答。">
+<meta name="keywords" content="极品反差">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='32' height='64' fill='%231c2b3a'/%3E%3Crect x='32' width='32' height='64' fill='%23e0b077'/%3E%3Ccircle cx='16' cy='20' r='7' fill='%23f5f2ec'/%3E%3Ccircle cx='48' cy='44' r='7' fill='%231c2b3a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2b3a;
+  --ink-soft:#3c4b5b;
+  --muted:#6d7a88;
+  --paper:#f5f2ec;
+  --card:#ffffff;
+  --line:#dcd6cb;
+  --accent:#b3653a;
+  --accent-soft:#f0dccb;
+  --gold:#e0b077;
+  --steel:#7d93a6;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(28,43,58,.08);
+  --shadow-m:0 6px 18px rgba(28,43,58,.10);
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:14px;
+  --space-4:22px;
+  --space-5:32px;
+  --space-6:48px;
+  --space-7:72px;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --font-serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --announce-h:38px;
+  --head-h:62px;
+  --sticky-total:calc(var(--announce-h) + var(--head-h));
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-sans);
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--accent)}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 var(--space-3)}
+[id]{scroll-margin-top:calc(var(--sticky-total) + 18px)}
+button{font-family:inherit}
+
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  height:var(--announce-h);
+  background:var(--ink);
+  color:#f2ede4;
+  font-size:13px;
+  display:flex;align-items:center;
+  overflow:hidden;
+}
+.announce .ann-inner{
+  width:100%;max-width:var(--maxw);margin:0 auto;
+  padding:0 var(--space-4);
+  display:flex;align-items:center;gap:var(--space-3);
+  white-space:nowrap;
+}
+.announce .tag{
+  background:var(--gold);color:var(--ink);
+  border-radius:999px;padding:1px 9px;
+  font-size:11px;font-weight:700;letter-spacing:.5px;flex:none;
+}
+.announce .ann-text{
+  overflow:hidden;text-overflow:ellipsis;
+}
+.announce a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;flex:none}
+
+/* ---------- 吸顶页头 ---------- */
+.site-head{
+  position:sticky;top:var(--announce-h);z-index:55;
+  background:rgba(245,242,236,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  max-width:var(--maxw);margin:0 auto;
+  padding:0 var(--space-4);
+  height:var(--head-h);
+  display:flex;align-items:center;gap:var(--space-4);
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.brand-mark rect,.brand-mark circle{transition:none}
+.brand-text{font-size:20px;font-weight:800;letter-spacing:1px}
+.main-nav{display:flex;align-items:center;gap:2px;margin-left:var(--space-4);flex-wrap:nowrap}
+.main-nav a{
+  padding:7px 11px;border-radius:999px;
+  font-size:14px;color:var(--ink-soft);
+  white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--accent-soft);color:var(--ink)}
+.main-nav a[aria-current="true"]{background:var(--ink);color:#fff}
+.head-tools{display:flex;align-items:center;gap:var(--space-2);margin-left:auto}
+.search-wrap{position:relative;display:flex;align-items:center}
+.search-wrap input{
+  width:190px;padding:8px 34px 8px 12px;
+  border:1px solid var(--line);border-radius:999px;
+  background:var(--card);font-size:14px;color:var(--ink);
+  transition:width .2s ease,border-color .2s;
+}
+.search-wrap input:focus{outline:none;border-color:var(--accent);width:230px}
+.search-wrap .s-icon{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  width:16px;height:16px;pointer-events:none;opacity:.6;
+}
+.search-result{
+  position:absolute;top:calc(100% + 8px);right:0;width:290px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  box-shadow:var(--shadow-m);padding:var(--space-2);
+  display:none;max-height:320px;overflow:auto;z-index:70;
+}
+.search-result.open{display:block}
+.search-result li a{display:block;padding:7px 10px;border-radius:var(--radius-s);font-size:13.5px}
+.search-result li a:hover{background:var(--accent-soft)}
+.search-result .empty{padding:10px;font-size:13.5px;color:var(--muted)}
+.menu-btn{
+  display:none;background:none;border:1px solid var(--line);
+  border-radius:var(--radius-s);width:38px;height:38px;
+  align-items:center;justify-content:center;cursor:pointer;color:var(--ink);
+}
+.menu-btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.menu-btn span{display:block;width:18px;height:2px;background:currentColor;position:relative}
+.menu-btn span::before,.menu-btn span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:currentColor;
+}
+.menu-btn span::before{top:-6px}
+.menu-btn span::after{top:6px}
+
+/* ---------- 主内容容器 ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--space-4)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;
+  padding:var(--space-6) 0 var(--space-5);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:var(--space-5);
+  align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2px;color:var(--accent);
+  font-weight:700;margin-bottom:var(--space-2);
+}
+.hero-eyebrow::before{content:"";width:26px;height:2px;background:var(--accent)}
+.hero h1{
+  font-size:clamp(30px,4.6vw,52px);
+  letter-spacing:2px;
+  margin-bottom:var(--space-3);
+  line-height:1.15;
+}
+.hero-lead{
+  font-size:16.5px;color:var(--ink-soft);max-width:34em;
+  margin-bottom:var(--space-4);
+}
+.hero-lead strong{color:var(--ink);font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-bottom:var(--space-5)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border-radius:999px;font-size:15px;font-weight:600;
+  border:1px solid transparent;transition:transform .18s ease,background .18s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{color:#fff;background:#2b3d50}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{background:var(--card);color:var(--ink)}
+.hero-stats{display:flex;gap:var(--space-5);flex-wrap:wrap}
+.hero-stats .st b{display:block;font-size:24px;line-height:1.2;font-family:var(--font-serif)}
+.hero-stats .st span{font-size:12.5px;color:var(--muted)}
+
+/* 原创视觉构图 */
+.hero-art{
+  position:relative;aspect-ratio:1/1;max-width:460px;margin-left:auto;
+}
+.hero-art .frame{
+  position:absolute;inset:0;
+  border-radius:var(--radius-l);
+  overflow:hidden;
+  background:linear-gradient(135deg,#e9e0d2 0%,#d9cbb8 100%);
+  box-shadow:var(--shadow-m);
+}
+.hero-art svg{width:100%;height:100%;display:block}
+.hero-art .badge{
+  position:absolute;left:-14px;bottom:26px;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius-m);padding:10px 14px;
+  box-shadow:var(--shadow-m);font-size:13px;
+  display:flex;align-items:center;gap:9px;
+}
+.hero-art .badge i{width:9px;height:9px;border-radius:50%;background:var(--accent);display:block}
+.hero-art .badge b{font-family:var(--font-serif);font-size:16px}
+.hero-art .badge em{font-style:normal;color:var(--muted);font-size:11.5px;display:block}
+
+/* ---------- 板块通用 ---------- */
+section.block{padding:var(--space-6) 0}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--space-3);margin-bottom:var(--space-4);flex-wrap:wrap}
+.block-head h2{font-size:clamp(21px,2.6vw,28px);letter-spacing:1px}
+.block-head h2 small{display:block;font-size:12.5px;font-weight:500;color:var(--muted);letter-spacing:2px;margin-top:4px;text-transform:uppercase}
+.block-head .more{font-size:13.5px;color:var(--accent);font-weight:600;white-space:nowrap}
+
+/* 概览：非对称 */
+.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3)}
+.ov-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-4);display:flex;flex-direction:column;gap:6px;
+  box-shadow:var(--shadow-s);
+}
+.ov-card.wide{grid-column:span 2}
+.ov-card .k{font-size:12px;color:var(--accent);letter-spacing:1.5px;font-weight:700}
+.ov-card h3{font-size:16.5px}
+.ov-card p{font-size:13.5px;color:var(--ink-soft);margin:0}
+.ov-card .num{font-family:var(--font-serif);font-size:26px;line-height:1}
+
+/* 精选：网格卡片 */
+.featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}
+.f-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.f-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.f-card .thumb{aspect-ratio:16/10;object-fit:cover;width:100%;background:#ddd}
+.f-card .f-body{padding:var(--space-3) var(--space-4) var(--space-4);display:flex;flex-direction:column;gap:8px;flex:1}
+.f-card .f-tag{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:1px}
+.f-card h3{font-size:16.5px;line-height:1.5}
+.f-card p{font-size:13.5px;color:var(--ink-soft);margin:0;flex:1}
+.f-card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center}
+
+/* 最新更新：时间线 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.t-item{position:relative;padding:0 0 var(--space-4)}
+.t-item::before{
+  content:"";position:absolute;left:-24px;top:7px;width:10px;height:10px;border-radius:50%;
+  background:var(--card);border:2px solid var(--accent);
+}
+.t-item time{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.5px}
+.t-item h3{font-size:15.5px;margin:2px 0 3px}
+.t-item p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 分类入口：标签索引 */
+.cat-index{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3)}
+.cat-pill{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:14px 16px;display:flex;flex-direction:column;gap:3px;
+  transition:border-color .18s,transform .18s;
+}
+.cat-pill:hover{border-color:var(--accent);transform:translateY(-2px)}
+.cat-pill b{font-size:15px}
+.cat-pill span{font-size:12px;color:var(--muted)}
+
+/* 深度解析：分栏正文 */
+.analysis{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:var(--space-5);box-shadow:var(--shadow-s);
+}
+.analysis .art-meta{font-size:12.5px;color:var(--muted);margin-bottom:var(--space-2)}
+.analysis h2{font-size:clamp(22px,2.8vw,30px);margin-bottom:var(--space-2)}
+.analysis .sub{font-size:14.5px;color:var(--ink-soft);margin-bottom:var(--space-4);border-left:3px solid var(--gold);padding-left:var(--space-3)}
+.analysis-cols{columns:2;column-gap:var(--space-5)}
+.analysis-cols h3{font-size:16.5px;margin:var(--space-4) 0 var(--space-2);break-after:avoid}
+.analysis-cols h3:first-child{margin-top:0}
+.analysis-cols p{font-size:14.5px;color:var(--ink-soft);margin-bottom:var(--space-3);break-inside:avoid}
+.claim-box{
+  background:var(--accent-soft);border-radius:var(--radius-m);
+  padding:var(--space-3) var(--space-4);margin:var(--space-3) 0;
+  font-size:13.5px;color:var(--ink);break-inside:avoid;
+}
+.claim-box b{display:block;font-size:12px;letter-spacing:1px;color:var(--accent);margin-bottom:4px}
+.claim-table{width:100%;border-collapse:collapse;font-size:13px;margin:var(--space-3) 0;break-inside:avoid}
+.claim-table th,.claim-table td{border:1px solid var(--line);padding:7px 10px;text-align:left}
+.claim-table th{background:#f3eee5;font-size:12.5px}
+.claim-table td{color:var(--ink-soft)}
+
+/* 体验指南：编号步骤 */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3)}
+.step{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-4);display:flex;gap:var(--space-3);
+}
+.step .n{
+  font-family:var(--font-serif);font-size:22px;line-height:1;color:var(--accent);
+  flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--accent);
+  display:flex;align-items:center;justify-content:center;
+}
+.step h3{font-size:15.5px;margin-bottom:4px}
+.step p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 对照面板 */
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;
+}
+.compare > div{padding:var(--space-4)}
+.compare .c-left{background:#efe9de}
+.compare .c-right{background:var(--card);border-left:1px solid var(--line)}
+.compare h3{font-size:14px;letter-spacing:1px;color:var(--accent);margin-bottom:var(--space-2)}
+.compare ul li{font-size:13.5px;color:var(--ink-soft);padding:6px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px}
+.compare ul li:last-child{border-bottom:0}
+.compare ul li b{color:var(--ink);font-weight:600}
+
+/* 榜单 */
+.rank-list{display:flex;flex-direction:column;gap:2px}
+.rank-item{
+  display:grid;grid-template-columns:42px 1fr auto;gap:var(--space-3);
+  align-items:center;padding:13px var(--space-3);
+  background:var(--card);border-radius:var(--radius-s);
+  border:1px solid transparent;transition:border-color .18s;
+}
+.rank-item:hover{border-color:var(--line)}
+.rank-item .r{font-family:var(--font-serif);font-size:20px;color:var(--accent);text-align:center}
+.rank-item .ri-main b{display:block;font-size:15px}
+.rank-item .ri-main span{font-size:12.5px;color:var(--muted)}
+.rank-item .ri-score{font-size:13px;color:var(--ink-soft);font-family:var(--font-serif)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3)}
+details.faq{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-3) var(--space-4);
+}
+details.faq[open]{border-color:var(--gold)}
+details.faq summary{
+  cursor:pointer;font-size:15px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";font-size:18px;color:var(--accent);font-family:var(--font-serif);flex:none;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq p{font-size:13.5px;color:var(--ink-soft);margin:var(--space-2) 0 0}
+
+/* 评论：引语卡 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
+.cmt{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-4);position:relative;
+  display:flex;flex-direction:column;gap:10px;
+}
+.cmt::before{
+  content:"“";font-family:var(--font-serif);font-size:44px;line-height:1;
+  color:var(--gold);position:absolute;top:6px;right:14px;opacity:.5;
+}
+.cmt p{font-size:13.5px;color:var(--ink-soft);margin:0}
+.cmt .who{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.cmt .who i{width:24px;height:24px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-style:normal;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.cmt .star{color:var(--gold);font-size:12px;letter-spacing:2px}
+
+/* 资讯：紧凑列表 */
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2) var(--space-5)}
+.news-item{
+  display:flex;gap:var(--space-3);padding:12px 0;border-bottom:1px solid var(--line);
+  align-items:baseline;
+}
+.news-item time{font-size:12px;color:var(--muted);flex:none;font-variant-numeric:tabular-nums}
+.news-item a{font-size:14.5px}
+.news-item .src{font-size:11.5px;color:var(--accent);flex:none;margin-left:auto}
+
+/* 相关推荐：标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px}
+.rec-tags a{
+  padding:8px 15px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);font-size:14px;transition:background .18s,color .18s;
+}
+.rec-tags a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* 创作者证言 */
+.voice{
+  display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:var(--space-4);align-items:stretch;
+}
+.voice-card{
+  background:var(--ink);color:#f2ede4;border-radius:var(--radius-l);
+  padding:var(--space-5);display:flex;flex-direction:column;justify-content:space-between;
+}
+.voice-card blockquote{margin:0;font-family:var(--font-serif);font-size:19px;line-height:1.7}
+.voice-card .vname{margin-top:var(--space-4);font-size:13px;color:#c9d2db}
+.voice-card .vname b{display:block;color:#fff;font-size:14px;font-family:var(--font-sans)}
+.voice-side{display:grid;grid-template-columns:1fr;gap:var(--space-3)}
+.voice-side .vs{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:var(--space-3) var(--space-4);font-size:13.5px;color:var(--ink-soft);
+}
+.voice-side .vs b{color:var(--ink);display:block;font-size:14.5px;margin-bottom:2px}
+
+/* ---------- 页尾 ---------- */
+.site-foot{
+  background:var(--ink);color:#cbd3db;margin-top:var(--space-6);
+  padding:var(--space-6) 0 var(--space-5);
+}
+.foot-top{display:grid;grid-template-columns:1.4fr 2fr;gap:var(--space-5);padding-bottom:var(--space-5);border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand{display:flex;flex-direction:column;gap:10px}
+.foot-brand .fb-line{display:flex;align-items:center;gap:10px}
+.foot-brand .fb-name{font-size:20px;font-weight:800;color:#fff;letter-spacing:1px}
+.foot-brand p{font-size:13.5px;color:#a9b5c1;margin:0;max-width:30em}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)}
+.foot-cols h4{font-size:13px;letter-spacing:1.5px;color:var(--gold);margin-bottom:10px}
+.foot-cols li{margin-bottom:7px}
+.foot-cols a{font-size:13.5px;color:#cbd3db}
+.foot-cols a:hover{color:#fff}
+.foot-note{
+  font-size:12px;color:#93a1af;margin-top:var(--space-4);
+  display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;justify-content:space-between;
+}
+.foot-note .copy{display:flex;flex-wrap:wrap;gap:4px 16px}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:50;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--ink);color:#fff;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-m);
+  opacity:0;pointer-events:none;transform:translateY(8px);
+  transition:opacity .2s,transform .2s;
+}
+.to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.to-top:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .main-nav{display:none}
+  .main-nav.open{
+    display:flex;flex-direction:column;align-items:stretch;
+    position:absolute;left:0;right:0;top:100%;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:var(--space-2) var(--space-4) var(--space-4);
+    gap:2px;box-shadow:var(--shadow-m);
+  }
+  .main-nav.open a{padding:10px 12px;border-radius:var(--radius-s)}
+  .menu-btn{display:flex}
+  .head-inner{position:relative}
+  .hero-grid{grid-template-columns:1fr;gap:var(--space-4)}
+  .hero-art{max-width:340px;margin:0 auto}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .featured-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-index{grid-template-columns:repeat(2,1fr)}
+  .analysis-cols{columns:1}
+  .steps{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr 1fr}
+  .news-list{grid-template-columns:1fr}
+  .voice{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .head-inner{padding:0 var(--space-3);gap:var(--space-2)}
+  .search-wrap input{width:120px}
+  .search-wrap input:focus{width:150px}
+  .brand-text{font-size:17px}
+  .overview-grid,.featured-grid,.cat-index,.comments,.compare{grid-template-columns:1fr}
+  .ov-card.wide{grid-column:auto}
+  .hero-stats{gap:var(--space-4)}
+  .analysis{padding:var(--space-4)}
+  .rank-item{grid-template-columns:34px 1fr auto;gap:10px}
+  .search-result{width:240px;right:-52px}
+  .to-top{right:12px;bottom:16px;width:40px;height:40px}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  .news-item .src{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.f-card:hover,.cat-pill:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce" id="announce">
+  <div class="ann-inner">
+    <span class="tag">更新</span>
+    <span class="ann-text">11 月 7 日新增「下班后街头切换」侧拍 6 组，并补录 3 条通勤与周末造型对照。</span>
+    <a href="/#latest">查看更新</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="/#top" aria-label="极品反差 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="20" height="40" fill="#1c2b3a"/>
+        <rect x="20" width="20" height="40" fill="#e0b077"/>
+        <circle cx="10" cy="13" r="4.4" fill="#f5f2ec"/>
+        <circle cx="30" cy="27" r="4.4" fill="#1c2b3a"/>
+      </svg>
+      <span class="brand-text">极品反差</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">风格概览</a>
+      <a href="/#featured">精选图鉴</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">读者评论</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-wrap">
+        <input type="search" id="searchInput" placeholder="搜索条目、单品、场景" aria-label="站内搜索" autocomplete="off">
+        <svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
+        <ul class="search-result" id="searchResult" role="listbox" aria-label="搜索结果"></ul>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="展开导航菜单">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="hero-eyebrow">同一张脸的两种打开方式</span>
+          <h1>极品反差</h1>
+          <p class="hero-lead">西装革履的写字楼电梯口，和周六凌晨的便利店门口，可能是同一个人。<strong>这里记录造型、神态、光线与场合之间的落差</strong>，把“换一身就像换个人”拆成可对照的条目——从面料、廓形到走路节奏，逐项比对。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#featured">进入精选图鉴</a>
+            <a class="btn btn-ghost" href="/#analysis">读深度解析</a>
+          </div>
+          <div class="hero-stats">
+            <div class="st"><b>86</b><span>已归档对照条目</span></div>
+            <div class="st"><b>12</b><span>风格频道</span></div>
+            <div class="st"><b>6</b><span>本周新增侧拍</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="frame">
+            <svg viewBox="0 0 400 400" role="img" aria-label="左右分割的人物剪影构图，左侧深色西装、右侧浅色街头造型">
+              <defs>
+                <linearGradient id="gL" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#233546"/><stop offset="1" stop-color="#16222e"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="400" fill="url(#gL)"/>
+              <rect x="200" width="200" height="400" fill="#efe6d8"/>
+              <g fill="#f5f2ec" opacity=".92">
+                <circle cx="100" cy="112" r="46"/>
+                <path d="M40 400c0-64 26-104 60-104s60 40 60 104z"/>
+              </g>
+              <g fill="#1c2b3a" opacity=".9">
+                <circle cx="300" cy="112" r="46"/>
+                <path d="M240 400c0-64 26-104 60-104s60 40 60 104z"/>
+              </g>
+              <rect x="196" y="0" width="8" height="400" fill="#b3653a"/>
+              <g stroke="#b3653a" stroke-width="2" fill="none" opacity=".85">
+                <path d="M232 176h136"/>
+                <path d="M232 208h96"/>
+                <path d="M32 176h136"/>
+                <path d="M32 208h80"/>
+              </g>
+              <g fill="#b3653a" font-family="Georgia,serif" font-size="15" opacity=".85">
+                <text x="32" y="340">09:00</text>
+                <text x="232" y="340">23:40</text>
+              </g>
+            </svg>
+          </div>
+          <div class="badge">
+            <i></i>
+            <div><b>13 小时</b><em>同一人，两套皮肤</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- 领域概览 -->
+    <section class="block" id="overview">
+      <div class="block-head">
+        <h2>风格概览<small>What changes, what stays</small></h2>
+        <a class="more" href="/#channels">按场合分类 →</a>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-card wide">
+          <span class="k">核心观察</span>
+          <h3>反差不在衣服贵不贵，在“轮廓开关”</h3>
+          <p>同一件深灰羊毛大衣，扣上腰带进会议室，松开扣子配工装裤去livehouse，肩线落差只有 3 厘米，观感却像两个人。归档里 68% 的反差案例，改动集中在腰线与鞋型两项。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">时间</span>
+          <div class="num">7:20</div>
+          <p>早晨通勤侧的造型平均准备时间，比周末侧短 24 分钟。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">光线</span>
+          <div class="num">2.8k</div>
+          <p>便利店冷白光下的侧拍色温，比办公室暖光低约 300K。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">单品</span>
+          <h3>高频复用前三</h3>
+          <p>黑色直筒西裤、白色厚底球鞋、驼色短款外套。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">神态</span>
+          <h3>眼神先变，衣服后变</h3>
+          <p>多数对照记录里，下颌角度和视线高度的调整早于换装完成。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">场合</span>
+          <h3>通勤 vs 夜间街头</h3>
+          <p>两类场景占全部归档条目的 51%，其余为约会、看展、短途出行。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="block" id="featured">
+      <div class="block-head">
+        <h2>精选图鉴<small>Selected looks</small></h2>
+        <a class="more" href="/#latest">本周新增 →</a>
+      </div>
+      <div class="featured-grid">
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-suit/640/400" width="640" height="400" loading="lazy" alt="深灰双排扣西装搭配白色运动鞋的电梯口侧拍">
+          <div class="f-body">
+            <span class="f-tag">通勤反差</span>
+            <h3>双排扣西装 + 厚底白鞋：电梯 30 秒换气口</h3>
+            <p>西装上装保持职场信用，鞋底厚度把重心往下压，走出写字楼不显浮。</p>
+            <div class="meta"><span>11 月 6 日</span><span>作者 陈叙</span></div>
+          </div>
+        </article>
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-night/640/400" width="640" height="400" loading="lazy" alt="夜间便利店门口驼色短外套配工装裤的街头侧拍">
+          <div class="f-body">
+            <span class="f-tag">夜间街头</span>
+            <h3>驼色短外套的夜间版本：腰带松一格</h3>
+            <p>同一件外套白天系带显利落，晚上解开、内搭换印花 T，走路幅度立刻放开。</p>
+            <div class="meta"><span>11 月 5 日</span><span>作者 林见</span></div>
+          </div>
+        </article>
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-gallery/640/400" width="640" height="400" loading="lazy" alt="美术馆白墙前黑色高领与阔腿裤的看展造型">
+          <div class="f-body">
+            <span class="f-tag">看展约会</span>
+            <h3>黑色高领的两次出场：白墙前与烛光下</h3>
+            <p>同一个高领，看展配阔腿裤、吃饭加一条细链，光线变了，气质跟着换挡。</p>
+            <div class="meta"><span>11 月 4 日</span><span>作者 周迟</span></div>
+          </div>
+        </article>
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-commute/640/400" width="640" height="400" loading="lazy" alt="早高峰地铁站扶手旁浅蓝衬衫与西裤的抓拍">
+          <div class="f-body">
+            <span class="f-tag">早高峰</span>
+            <h3>浅蓝衬衫的折袖高度：七分手腕留白</h3>
+            <p>袖口停在腕骨上两指，通勤路上不显拘谨，进会议室放下来也不狼狈。</p>
+            <div class="meta"><span>11 月 3 日</span><span>作者 陈叙</span></div>
+          </div>
+        </article>
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-weekend/640/400" width="640" height="400" loading="lazy" alt="周末傍晚河堤边宽松卫衣与运动裤的松弛侧拍">
+          <div class="f-body">
+            <span class="f-tag">周末松弛</span>
+            <h3>宽松卫衣与运动裤：肩线故意低 4 厘米</h3>
+            <p>落肩落得刚好，垂坠感压住周身轮廓，站在河堤边像刚从家里出来。</p>
+            <div class="meta"><span>11 月 2 日</span><span>作者 林见</span></div>
+          </div>
+        </article>
+        <article class="f-card">
+          <img class="thumb" src="https://picsum.photos/seed/fanchai-trip/640/400" width="640" height="400" loading="lazy" alt="短途出行候车厅里风衣配帆布鞋的造型">
+          <div class="f-body">
+            <span class="f-tag">短途出行</span>
+            <h3>风衣行李化：下摆打个结再上车</h3>
+            <p>候车厅里把长风衣下摆打个结，行李搬运方便，落座时也不会压得皱。</p>
+            <div class="meta"><span>11 月 1 日</span><span>作者 周迟</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="block" id="latest">
+      <div class="block-head">
+        <h2>最新更新<small>Recent updates</small></h2>
+        <span class="more">截至 11 月 7 日</span>
+      </div>
+      <div class="timeline">
+        <div class="t-item">
+          <time>11 月 7 日</time>
+          <h3>新增「下班后街头切换」侧拍 6 组</h3>
+          <p>地点为静安嘉里中心周边与南昌路便利店，人物从西装到落肩外套的切换过程按 4 个节点记录。</p>
+        </div>
+        <div class="t-item">
+          <time>11 月 6 日</time>
+          <h3>补录 3 条通勤与周末造型对照</h3>
+          <p>对照组统一使用黑色直筒西裤，只更换上装与鞋，便于看清单项变量带来的观感差。</p>
+        </div>
+        <div class="t-item">
+          <time>11 月 5 日</time>
+          <h3>《同一件大衣的两种穿法》更新第二版</h3>
+          <p>新增腰带位置对肩线视觉测量的说明，删去此前关于身高的笼统描述。</p>
+        </div>
+        <div class="t-item">
+          <time>11 月 3 日</time>
+          <h3>看展造型专题补 2 组白墙背景记录</h3>
+          <p>取景于西岸美术馆一层，重点记录高领黑与浅色墙面的边界关系。</p>
+        </div>
+        <div class="t-item">
+          <time>10 月 31 日</time>
+          <h3>问答区新增“反差是否等于装”</h3>
+          <p>把读者反复提到的疑问独立成条，答案焦点放在场合规则与自我表达的分界上。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="block" id="channels">
+      <div class="block-head">
+        <h2>分类入口<small>Browse by scene</small></h2>
+        <span class="more">12 个频道 · 按场合划分</span>
+      </div>
+      <div class="cat-index">
+        <a class="cat-pill" href="/#featured"><b>通勤反差</b><span>电梯口、会议室、地铁</span></a>
+        <a class="cat-pill" href="/#featured"><b>夜间街头</b><span>便利店、livehouse、末班车</span></a>
+        <a class="cat-pill" href="/#featured"><b>看展约会</b><span>美术馆、展映、晚餐</span></a>
+        <a class="cat-pill" href="/#featured"><b>早高峰抓拍</b><span>折袖、包带、步频</span></a>
+        <a class="cat-pill" href="/#featured"><b>周末松弛</b><span>河堤、菜场、咖啡馆</span></a>
+        <a class="cat-pill" href="/#featured"><b>短途出行</b><span>候车厅、民宿、雨天</span></a>
+        <a class="cat-pill" href="/#guide"><b>鞋型切换</b><span>白鞋、乐福、帆布</span></a>
+        <a class="cat-pill" href="/#guide"><b>外套对照</b><span>大衣、风衣、短夹克</span></a>
+        <a class="cat-pill" href="/#analysis"><b>腰线判断</b><span>系带、松扣、内收</span></a>
+        <a class="cat-pill" href="/#analysis"><b>光线与色温</b><span>冷白、暖黄、自然光</span></a>
+        <a class="cat-pill" href="/#comments"><b>读者侧拍</b><span>投稿与现场记录</span></a>
+        <a class="cat-pill" href="/#rank"><b>本周榜单</b><span>按对照完成度排序</span></a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="block" id="analysis">
+      <div class="block-head">
+        <h2>深度解析<small>One argument, checked piece by piece</small></h2>
+      </div>
+      <article class="analysis">
+        <div class="art-meta">作者 陈叙 · 11 月 5 日第二版 · 阅读约 9 分钟</div>
+        <h2>反差的支点是腰线，不是单品价格</h2>
+        <p class="sub">把“换一身就像换个人”拆开看，真正撑住观感落差的是腰线位置、鞋底厚度与走路节奏三项。价格与品牌在这条链上排在末位。</p>
+
+        <div class="analysis-cols">
+          <h3>一、同一件大衣，腰带位置决定“像谁”</h3>
+          <p>10 月 28 日到 11 月 3 日，归档里用同一件深灰羊毛大衣做了 9 组对照。系带位置在自然腰线上方 2 厘米时，记录者给出的“利落”“有距离感”评价占 7 组；腰带下移到胯部、扣子全开时，评价转为“松弛”“像刚下班”，占 8 组。两组之间没有更换任何一件衣物，只有腰带位置与扣合方式变化。</p>
+          <p>这组对照的解释是轮廓边界。系在上方时，视觉重心收在肋骨下缘，肩线被拉直；松开后布料从肩往下垂，重心落到胯部，人显得更宽也更随意。价格论在这里解释不了差异，因为参照物是同一件衣服。</p>
+
+          <div class="claim-box">
+            <b>可反驳的判断</b>
+            如果一个人的肩宽本身超过 48 厘米，系带反而可能放大上宽下窄的比例。归档里 3 组宽肩记录都出现了这个问题，解法是把腰带移到胯部而非自然腰。
+          </div>
+
+          <h3>二、鞋底厚度改变的是步频，不是身高</h3>
+          <p>11 月 1 日在河堤做的步频记录：同一个人穿 2 厘米平底乐福走 100 米，平均 96 步；换 4 厘米厚底白鞋走同样距离，平均 88 步。步幅变大之后，身体前倾幅度减少，侧拍里“飘”的感觉被压下去。身高看起来没变多少，气质变了。</p>
+          <p>需要区分的是厚底与增高。厚底影响落地节奏与重心，增高只改变绝对高度。归档里 5 组“换了鞋像换了人”的记录，共同点是鞋底形变让走路方式变了，而不是鞋跟数字变大。</p>
+
+          <table class="claim-table">
+            <caption style="text-align:left;font-size:12px;color:#6d7a88;margin-bottom:4px">同一人三组对照（11 月 1 日 · 河堤 100 米）</caption>
+            <thead><tr><th>变量</th><th>平底乐福</th><th>厚底白鞋</th></tr></thead>
+            <tbody>
+              <tr><td>平均步数</td><td>96 步</td><td>88 步</td></tr>
+              <tr><td>步幅</td><td>约 104 cm</td><td>约 114 cm</td></tr>
+              <tr><td>侧拍观感</td><td>克制、收着走</td><td>放开、幅度大</td></tr>
+            </tbody>
+          </table>
+
+          <h3>三、办公室暖光与便利店冷白，谁在替谁化妆</h3>
+          <p>11 月 6 日在同一栋楼里做了两组色温记录：办公室顶灯实测约 3800K，便利店门口冷白灯实测约 6500K。同一套驼色外套，在办公室照片里偏黄、像旧衣；在便利店门口颜色变冷、接近新品。记录者对这个差异的反应很直接——“衣服换了”。</p>
+          <p>说法差异在于有人把它归为“灯光滤镜”。从可核对的角度看，色温确实改变了面料颜色呈现，但真正的反差成立条件是造型本身也有变化。只有光线变、衣服不变的记录里，读者识别“像两个人”的比例明显降低。这两个层面需要分开讲，混为一谈会让判断变模糊。</p>
+
+          <h3>四、不能归因于“气场”的部分</h3>
+          <p>归档里被读者评价为“反差大”的条目，往往有具体可指的改动：内搭领口高度、裤脚与鞋面之间的距离、包的位置。10 月 30 日的一组记录只把斜挎包换成手提包，评价里“像换了个人”出现 4 次。这个改动的实际作用是让肩部不再被压出斜线，站姿显得更直。</p>
+          <p>推测的部分也要标出来：短期内在陌生场合被记住，可能和神态自信度有关，但这一点没有可重复的测量，归档只记下记录者的主观描述，不作为结论。可核对的是哪一项变量被改、改了之后照片里哪个轮廓变了。</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="block" id="guide">
+      <div class="block-head">
+        <h2>体验指南<small>How to try it safely</small></h2>
+        <span class="more">适合第一次想做对照记录的人</span>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <div>
+            <h3>先定场合，不定风格</h3>
+            <p>先写下两个真实要去的地方，比如“周三上午的客户会议”和“周六晚上的便利店”。场合会替你先筛掉一半不成立的搭配。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div>
+            <h3>只改两个变量</h3>
+            <p>腰带位置与鞋型是最容易出对照效果的两项。改三个以上，拍出来的差异很难归因到具体哪一项。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div>
+            <h3>用同一角度拍两次</h3>
+            <p>手机固定在同一高度，拍正面和侧面各一张。角度一致，才能看清轮廓是哪里变的。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div>
+            <h3>记录光线，不只记录衣服</h3>
+            <p>写下拍摄时间和光源类型。办公室顶灯、便利店冷白灯、傍晚自然光，会让同一件衣服的颜色差出两个色阶。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">5</div>
+          <div>
+            <h3>建一张对照表</h3>
+            <p>列“改了什么”“照片里哪里变了”“别人的第一反应”。三列写满，比反复看照片有用。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">6</div>
+          <div>
+            <h3>别把场合穿错</h3>
+            <p>街头感强的搭配进严肃会议室会失真。反差的前提是每套衣服在它自己的场合里成立。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 对照面板 -->
+    <section class="block" id="compare">
+      <div class="block-head">
+        <h2>通勤与周末对照<small>Side by side</small></h2>
+      </div>
+      <div class="compare">
+        <div class="c-left">
+          <h3>工作日 · 通勤侧</h3>
+          <ul>
+            <li><b>上装</b><span>深灰双排扣西装</span></li>
+            <li><b>下装</b><span>黑色直筒西裤</span></li>
+            <li><b>鞋</b><span>厚底白鞋（2 cm）</span></li>
+            <li><b>腰带</b><span>系在自然腰线上 2 cm</span></li>
+            <li><b>包</b><span>手提托特，肩不承压</span></li>
+            <li><b>观感</b><span>利落、有距离</span></li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <h3>周末 · 街头侧</h3>
+          <ul>
+            <li><b>上装</b><span>同款大衣，扣子全开</span></li>
+            <li><b>下装</b><span>工装裤，裤脚塞入鞋帮</span></li>
+            <li><b>鞋</b><span>厚底白鞋（4 cm）</span></li>
+            <li><b>腰带</b><span>下移到胯部，或直接不系</span></li>
+            <li><b>包</b><span>斜挎小包，压低重心</span></li>
+            <li><b>观感</b><span>松弛、幅度大</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 榜单 -->
+    <section class="block" id="rank">
+      <div class="block-head">
+        <h2>本周榜单<small>Ranked by contrast clarity</small></h2>
+        <span class="more">按对照完成度排序 · 11 月 7 日</span>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item">
+          <div class="r">01</div>
+          <div class="ri-main"><b>双排扣西装的电梯 30 秒换气口</b><span>变量清晰：腰带 + 鞋型 · 记录者 陈叙</span></div>
+          <div class="ri-score">A+</div>
+        </div>
+        <div class="rank-item">
+          <div class="r">02</div>
+          <div class="ri-main"><b>驼色短外套的夜间版本</b><span>变量清晰：腰带 + 内搭 · 记录者 林见</span></div>
+          <div class="ri-score">A</div>
+        </div>
+        <div class="rank-item">
+          <div class="r">03</div>
+          <div class="ri-main"><b>黑色高领的两次出场</b><span>变量清晰：配件 + 光线 · 记录者 周迟</span></div>
+          <div class="ri-score">A</div>
+        </div>
+        <div class="rank-item">
+          <div class="r">04</div>
+          <div class="ri-main"><b>浅蓝衬衫的折袖高度</b><span>仅一项变量，效应偏弱 · 记录者 陈叙</span></div>
+          <div class="ri-score">B+</div>
+        </div>
+        <div class="rank-item">
+          <div class="r">05</div>
+          <div class="ri-main"><b>风衣行李化：下摆打结</b><span>功能性强，观感反差中等 · 记录者 周迟</span></div>
+          <div class="ri-score">B</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="block" id="news">
+      <div class="block-head">
+        <h2>相关资讯<small>Reference & context</small></h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item"><time>11 月 7 日</time><a href="/#analysis">为什么同一件大衣换个腰带就像换个人</a><span class="src">归档观察</span></div>
+        <div class="news-item"><time>11 月 6 日</time><a href="/#compare">通勤与周末造型对照表更新第三版</a><span class="src">方法</span></div>
+        <div class="news-item"><time>11 月 5 日</time><a href="/#guide">第一次做对照记录，先定场合再定风格</a><span class="src">指南</span></div>
+        <div class="news-item"><time>11 月 4 日</time><a href="/#rank">本周五组对照完成度评分发布</a><span class="src">榜单</span></div>
+        <div class="news-item"><time>11 月 2 日</time><a href="/#comments">读者投稿：河堤边的落肩卫衣记录</a><span class="src">投稿</span></div>
+        <div class="news-item"><time>10 月 31 日</time><a href="/#faq">“反差是否等于装”进入问答区</a><span class="src">问答</span></div>
+      </div>
+    </section>
+
+    <!-- 常见问答 -->
+    <section class="block" id="faq">
+      <div class="block-head">
+        <h2>常见问答<small>FAQ</small></h2>
+      </div>
+      <div class="faq-grid">
+        <details class="faq">
+          <summary>反差造型是不是一定要买两套完全不同的衣服？</summary>
+          <p>不需要。归档里 68% 的案例只改了两项：腰带位置与鞋型。同一件深灰大衣，系带与松扣就能撑起两种场合的观感。</p>
+        </details>
+        <details class="faq">
+          <summary>通勤西装搭配厚底白鞋，进会议室会不会显得不正式？</summary>
+          <p>取决于会议室文化。11 月 6 日的对照记录里，金融行业客户的会议室对鞋型宽容度低，广告公司侧则完全无碍。先观察同场其他人鞋型再决定。</p>
+        </details>
+        <details class="faq">
+          <summary>夜里便利店冷白灯下拍照，衣服颜色总是不对？</summary>
+          <p>冷白灯色温约 6500K，会让驼色偏灰、黑色发青。手机白平衡手动锁在 5000K 左右，能还原接近肉眼看到的颜色；或干脆利用冷调拍夜间版本。</p>
+        </details>
+        <details class="faq">
+          <summary>肩宽的人怎么做出落差又不显壮？</summary>
+          <p>腰带别放在自然腰，移到胯部，或直接不系。归档里 3 组宽肩记录的解法都是这个，配合垂坠感强的面料更稳。</p>
+        </details>
+        <details class="faq">
+          <summary>反差感会被认为是在刻意装吗？</summary>
+          <p>场合对不上才会。街头感强的搭配进严肃会议室会失真，反过来也一样。每套衣服在自己的场合里站住，落差才被当成风格，而不是表演。</p>
+        </details>
+        <details class="faq">
+          <summary>同一件风衣夏天和冬天能做出反差吗？</summary>
+          <p>能，但变量不同。夏天把袖口卷到肘部、里面只穿背心；冬天叠穿高领与围巾，轮廓厚度差出明显两档。归档里有 2 组跨季节记录，主要靠叠穿层数。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="block" id="comments">
+      <div class="block-head">
+        <h2>读者评论<small>What readers said</small></h2>
+        <span class="more">近 7 天 · 节选 6 条</span>
+      </div>
+      <div class="comments">
+        <div class="cmt">
+          <p>河堤那组步频数据有意思，我照着换成厚底鞋走了两天，确实走得慢了，同事说我“不像赶着打卡了”。</p>
+          <div class="who"><i>林</i><span>林见 · 11 月 3 日</span></div>
+        </div>
+        <div class="cmt">
+          <p>说实话双排扣配白鞋那组我不太买账。电梯里看着还行，走出大堂那几步鞋底太厚，像踩在垫子上。</p>
+          <div class="who"><i>老</i><span>老周 · 11 月 4 日</span></div>
+        </div>
+        <div class="cmt">
+          <p>便利店冷白灯那段说对了。我的驼色外套在门口拍出来一直是灰的，换到暖光下立刻活过来，之前还以为是衣服旧了。</p>
+          <div class="who"><i>陈</i><span>陈小姐 · 11 月 5 日</span></div>
+        </div>
+        <div class="cmt">
+          <p>“腰带下移到胯部”这条对宽肩确实有用，试了两次，比系在腰上看着顺眼多了。</p>
+          <div class="who"><i>H</i><span>Huan · 11 月 6 日</span></div>
+        </div>
+        <div class="cmt">
+          <p>整站有点太强调“有据可查”了，穿衣服哪有那么多测量。我就图个拍照好看，数据看多了累。</p>
+          <div class="who"><i>小</i><span>小满 · 11 月 6 日</span></div>
+        </div>
+        <div class="cmt">
+          <p>黑色高领那组两个场景的对比，白墙前和烛光下，确实像换了个人。配件就加了一条细链，变化挺明显。</p>
+          <div class="who"><i>阿</i><span>阿迟 · 11 月 7 日</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创作者证言 -->
+    <section class="block" id="voice">
+      <div class="block-head">
+        <h2>创作者证言<small>From the recorders</small></h2>
+      </div>
+      <div class="voice">
+        <div class="voice-card">
+          <blockquote>“第一次拍对照，我把能换的都换了。结果照片摆在一起，谁也说不清是哪件起的作用。后来只留腰带和鞋，反而看清了。”</blockquote>
+          <div class="vname"><b>陈叙</b>归档记录者 · 通勤反差方向 · 已提交 31 组对照</div>
+        </div>
+        <div class="voice-side">
+          <div class="vs"><b>林见</b>夜间街头方向。她的经验是：晚上拍照别急着打光，先看便利店灯下衣服本来的颜色，再决定要不要补。</div>
+          <div class="vs"><b>周迟</b>看展约会方向。他更在意味道与声音，说高领毛衣的摩擦声和展厅安静程度有关系，这点没法量化，但确实影响观感。</div>
+          <div class="vs"><b>投稿说明</b>读者投稿需附两套造型的同一角度照片与拍摄时间，归档会标注记录者昵称与提交日期，不代写、不修改原始描述。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="block" id="recommend">
+      <div class="block-head">
+        <h2>相关推荐<small>Try these next</small></h2>
+      </div>
+      <div class="rec-tags">
+        <a href="/#featured">通勤反差造型</a>
+        <a href="/#featured">夜间街头侧拍</a>
+        <a href="/#guide">厚底鞋与步频记录</a>
+        <a href="/#analysis">腰线位置判断</a>
+        <a href="/#compare">通勤与周末对照表</a>
+        <a href="/#faq">便利店冷白灯拍摄</a>
+        <a href="/#analysis">同一件大衣两种穿法</a>
+        <a href="/#rank">本周对照完成度榜单</a>
+        <a href="/#voice">读者投稿说明</a>
+        <a href="/#guide">看展约会造型</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-line">
+          <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="20" height="40" fill="#e0b077"/>
+            <rect x="20" width="20" height="40" fill="#3c4b5b"/>
+            <circle cx="10" cy="13" r="4.4" fill="#1c2b3a"/>
+            <circle cx="30" cy="27" r="4.4" fill="#f5f2ec"/>
+          </svg>
+          <span class="fb-name">极品反差</span>
+        </div>
+        <p>把同一人物在不同场合的造型落差拆成变量，逐项对照，记录能复查的改动。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>内容</h4>
+          <ul>
+            <li><a href="/#featured">精选图鉴</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#analysis">深度解析</a></li>
+            <li><a href="/#rank">本周榜单</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>方法</h4>
+          <ul>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#compare">对照表</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>参与</h4>
+          <ul>
+            <li><a href="/#comments">读者评论</a></li>
+            <li><a href="/#voice">投稿说明</a></li>
+            <li><a href="/#recommend">相关推荐</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-note">
+      <div class="copy">
+        <span>示例数据：文中条目、评分、记录者为垂类示例内容，非真实人物授权。</span>
+        <span>页面更新时间 2026-11-08 · 对应 11 月 7 日新增 6 组侧拍</span>
+        <span>© 2026 极品反差 内容归档</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 14 7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 菜单 */
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.setAttribute('aria-label',open?'收起导航菜单':'展开导航菜单');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:1024px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索 */
+  var input=document.getElementById('searchInput');
+  var resultBox=document.getElementById('searchResult');
+  var index=[];
+  document.querySelectorAll('main [id]').forEach(function(sec){
+    sec.querySelectorAll('h2, h3').forEach(function(h){
+      var t=h.textContent.replace(/\s+/g,' ').trim();
+      if(t&&t.length>2){
+        index.push({title:t,id:sec.id});
+      }
+    });
+  });
+  document.querySelectorAll('main .rec-tags a, main .cat-pill').forEach(function(a){
+    var t=a.textContent.replace(/\s+/g,' ').trim();
+    var href=a.getAttribute('href')||'';
+    if(t&&href){
+      index.push({title:t,id:href.replace('/#','')});
+    }
+  });
+  var seen={};
+  index=index.filter(function(x){
+    var k=x.title+'|'+x.id;
+    if(seen[k])return false;seen[k]=1;return true;
+  });
+
+  function render(q){
+    resultBox.innerHTML='';
+    if(!q){resultBox.classList.remove('open');return;}
+    var hits=index.filter(function(x){return x.title.indexOf(q)>-1;}).slice(0,8);
+    if(!hits.length){
+      var li=document.createElement('li');
+      li.className='empty';
+      li.textContent='没有找到「'+q+'」相关条目，试试“腰带”“厚底鞋”“冷白灯”。';
+      resultBox.appendChild(li);
+    }else{
+      hits.forEach(function(h){
+        var li=document.createElement('li');
+        var a=document.createElement('a');
+        a.href='/#/'+h.id;
+        a.textContent=h.title;
+        a.setAttribute('href','/#'+h.id);
+        a.addEventListener('click',function(){resultBox.classList.remove('open');});
+        li.appendChild(a);
+        resultBox.appendChild(li);
+      });
+    }
+    resultBox.classList.add('open');
+  }
+  if(input){
+    input.addEventListener('input',function(){render(this.value.trim());});
+    input.addEventListener('focus',function(){if(this.value.trim())render(this.value.trim());});
+    document.addEventListener('click',function(e){
+      if(!e.target.closest('.search-wrap'))resultBox.classList.remove('open');
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var links=Array.prototype.slice.call(nav?nav.querySelectorAll('a'):[]);
+  var sections=links.map(function(a){
+    var id=(a.getAttribute('href')||'').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if('IntersectionObserver' in window&&sections.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(l){l.removeAttribute('aria-current');});
+          var cur=links.filter(function(l){
+            return (l.getAttribute('href')||'').replace('/#','')===en.target.id;
+          })[0];
+          if(cur)cur.setAttribute('aria-current','true');
+        }
+      });
+    },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+    sections.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"极品反差",
+  "alternateName":"极品反差-穿搭与生活图鉴",
+  "description":"记录同一人物在不同场合的造型反差，拆解腰带、鞋型、光线等变量，附对照表与问答。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"反差造型是不是一定要买两套完全不同的衣服？","acceptedAnswer":{"@type":"Answer","text":"不需要。归档里 68% 的案例只改了两项：腰带位置与鞋型。同一件深灰大衣，系带与松扣就能撑起两种场合的观感。"}},
+    {"@type":"Question","name":"通勤西装搭配厚底白鞋，进会议室会不会显得不正式？","acceptedAnswer":{"@type":"Answer","text":"取决于会议室文化。11 月 6 日的对照记录里，金融行业客户的会议室对鞋型宽容度低，广告公司侧则完全无碍。先观察同场其他人鞋型再决定。"}},
+    {"@type":"Question","name":"夜里便利店冷白灯下拍照，衣服颜色总是不对？","acceptedAnswer":{"@type":"Answer","text":"冷白灯色温约 6500K，会让驼色偏灰、黑色发青。手机白平衡手动锁在 5000K 左右，能还原接近肉眼看到的颜色；或干脆利用冷调拍夜间版本。"}},
+    {"@type":"Question","name":"肩宽的人怎么做出落差又不显壮？","acceptedAnswer":{"@type":"Answer","text":"腰带别放在自然腰，移到胯部，或直接不系。归档里 3 组宽肩记录的解法都是这个，配合垂坠感强的面料更稳。"}},
+    {"@type":"Question","name":"反差感会被认为是在刻意装吗？","acceptedAnswer":{"@type":"Answer","text":"场合对不上才会。街头感强的搭配进严肃会议室会失真，反过来也一样。每套衣服在自己的场合里站住，落差才被当成风格，而不是表演。"}},
+    {"@type":"Question","name":"同一件风衣夏天和冬天能做出反差吗？","acceptedAnswer":{"@type":"Answer","text":"能，但变量不同。夏天把袖口卷到肘部、里面只穿背心；冬天叠穿高领与围巾，轮廓厚度差出明显两档。归档里有 2 组跨季节记录，主要靠叠穿层数。"}}
+  ]
+}
+</script>
+
+</body>
+          </html>
