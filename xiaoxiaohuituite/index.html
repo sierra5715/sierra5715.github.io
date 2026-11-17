@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小小绘推特最新视频-更新追踪与内容观察</title>
+<meta name="description" content="小小绘推特最新视频更新追踪站，按发布日期整理短片段、直播切片与幕后花絮，附观看顺序建议、画质与时长对照、社区讨论与真假信息核对方法。">
+<meta name="keywords" content="小小绘推特最新视频">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e2543a'/%3E%3Cpath d='M18 44 L32 16 L46 44' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='47' r='4' fill='%23ffe0a8'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "小小绘推特最新视频",
+  "inLanguage": "zh-CN",
+  "description": "按发布日期整理小小绘在推特发布的短片段、直播切片与幕后花絮，并提供观看顺序与信息核对方法。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "小小绘推特最新视频是什么时间发布的？",
+      "acceptedAnswer": {"@type": "Answer", "text": "截至2026年11月8日，最近一条为11月6日晚发布的1分48秒竖屏短片，推文编号以X7q开头，发布账号为小小绘本人认证账号。"}
+    },
+    {
+      "@type": "Question",
+      "name": "推特视频无法播放怎么解决？",
+      "acceptedAnswer": {"@type": "Answer", "text": "先在网页端与客户端各试一次；若均卡在首帧，多为地区缓存问题，切换网络或等待10分钟后重试；若显示版权提示，则该片段可能已被删除或设限。"}
+    },
+    {
+      "@type": "Question",
+      "name": "如何分辨转载视频是否为原片？",
+      "acceptedAnswer": {"@type": "Answer", "text": "核对推文编号与发布时间，原片通常保留完整时长与右下角账号水印；搬运号常裁掉边框、加自站片头，并把时长截短到30秒以内。"}
+    },
+    {
+      "@type": "Question",
+      "name": "小小绘的直播切片与推特短片有什么区别？",
+      "acceptedAnswer": {"@type": "Answer", "text": "推特短片多为预先剪辑的竖屏内容，2分钟以内；直播切片来自每周三、周六晚的直播，横屏为主，常见5到15分钟版本，画面中会出现弹幕互动区。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --c-bg:#faf6f0;
+  --c-surface:#ffffff;
+  --c-ink:#221b16;
+  --c-ink-soft:#5a4f47;
+  --c-line:#e6dcd0;
+  --c-main:#e2543a;
+  --c-main-deep:#b93b26;
+  --c-accent:#2c6e63;
+  --c-accent-soft:#e2efe9;
+  --c-warm:#f7e3c6;
+  --c-mute:#8d7f74;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(34,27,22,.06);
+  --shadow-m:0 6px 20px rgba(34,27,22,.08);
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --fs-xs:12px;--fs-s:13px;--fs-base:15px;--fs-m:17px;--fs-l:22px;--fs-xl:30px;--fs-xxl:42px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --header-h:64px;
+  --notice-h:40px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + var(--notice-h) + 12px);}
+body{
+  margin:0;background:var(--c-bg);color:var(--c-ink);
+  font-family:var(--font);font-size:var(--fs-base);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--c-main-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,ol{margin:0;padding-left:1.2em;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 var(--sp-3);}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto;}
+.skip{position:absolute;left:-999px;top:0;background:var(--c-ink);color:#fff;padding:8px 14px;z-index:99;border-radius:0 0 8px 0;}
+.skip:focus{left:0;}
+
+/* 顶部吸顶组 */
+.sticky-group{position:sticky;top:0;z-index:50;}
+.notice-bar{
+  height:var(--notice-h);background:var(--c-ink);color:#f4e8dc;
+  display:flex;align-items:center;overflow:hidden;font-size:var(--fs-s);
+}
+.notice-bar .wrap{display:flex;align-items:center;gap:var(--sp-3);}
+.notice-tag{
+  flex:none;background:var(--c-main);color:#fff;font-weight:700;
+  padding:1px 8px;border-radius:999px;font-size:var(--fs-xs);letter-spacing:.5px;
+}
+.notice-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.notice-text b{color:var(--c-warm);font-weight:600;}
+.notice-bar a{color:var(--c-warm);text-decoration:underline;margin-left:auto;flex:none;font-size:var(--fs-xs);}
+
+.site-header{
+  height:var(--header-h);background:rgba(255,255,255,.95);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--c-line);
+  display:flex;align-items:center;
+}
+.site-header .wrap{display:flex;align-items:center;gap:var(--sp-4);}
+.brand{display:flex;align-items:center;gap:var(--sp-2);flex:none;}
+.brand svg{width:34px;height:34px;}
+.brand-text{font-size:var(--fs-m);font-weight:800;letter-spacing:.5px;color:var(--c-ink);line-height:1.1;}
+.brand-text small{display:block;font-size:10px;font-weight:500;color:var(--c-mute);letter-spacing:1.5px;}
+.main-nav{display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-left:var(--sp-4);}
+.main-nav a{
+  color:var(--c-ink-soft);font-size:var(--fs-s);padding:6px 10px;border-radius:var(--radius-s);
+}
+.main-nav a:hover{background:var(--c-warm);color:var(--c-ink);text-decoration:none;}
+.header-tools{display:flex;align-items:center;gap:var(--sp-2);margin-left:auto;}
+.search-form{display:flex;align-items:center;border:1px solid var(--c-line);border-radius:999px;padding:2px 4px 2px 12px;background:var(--c-bg);}
+.search-form input{
+  border:none;background:transparent;width:130px;font-size:var(--fs-s);
+  font-family:inherit;color:var(--c-ink);outline:none;padding:4px 0;
+}
+.search-form button{
+  border:none;background:var(--c-main);color:#fff;border-radius:999px;
+  width:26px;height:26px;display:grid;place-items:center;cursor:pointer;flex:none;
+}
+.search-form button:focus-visible,.main-nav a:focus-visible,.menu-btn:focus-visible{
+  outline:3px solid var(--c-accent);outline-offset:2px;
+}
+.menu-btn{
+  display:none;border:1px solid var(--c-line);background:var(--c-surface);
+  border-radius:var(--radius-s);padding:6px 10px;font-family:inherit;
+  font-size:var(--fs-s);color:var(--c-ink);cursor:pointer;align-items:center;gap:6px;
+}
+.search-status{
+  display:none;background:var(--c-warm);border:1px solid #e9cfa2;color:#6b4416;
+  padding:8px 14px;border-radius:var(--radius-s);font-size:var(--fs-s);margin:0 auto var(--sp-4);width:min(1180px,100% - 32px);
+}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;padding:var(--sp-7) 0 var(--sp-6);}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(600px 300px at 85% 10%,rgba(226,84,58,.13),transparent 70%),
+    radial-gradient(500px 260px at 5% 90%,rgba(44,110,99,.11),transparent 70%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-6);align-items:center;}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);
+  letter-spacing:1px;color:var(--c-main-deep);background:#fde8e2;
+  border:1px solid #f6c9bc;border-radius:999px;padding:3px 12px;margin-bottom:var(--sp-3);
+}
+.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--c-main);display:block;animation:pulse 2.4s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:var(--fs-xxl);letter-spacing:-.5px;margin-bottom:var(--sp-3);}
+.hero h1 span{color:var(--c-main);}
+.hero-desc{color:var(--c-ink-soft);max-width:33em;font-size:var(--fs-m);}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-5);}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 22px;
+  border-radius:999px;font-size:var(--fs-s);font-weight:600;border:1px solid transparent;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px);}
+.btn-main{background:var(--c-main);color:#fff;box-shadow:0 6px 16px rgba(226,84,58,.28);}
+.btn-ghost{border-color:var(--c-line);color:var(--c-ink);background:var(--c-surface);}
+.hero-stats{display:flex;gap:var(--sp-5);margin-top:var(--sp-6);flex-wrap:wrap;}
+.hero-stats div{min-width:88px;}
+.hero-stats b{display:block;font-size:var(--fs-l);color:var(--c-main-deep);line-height:1.2;}
+.hero-stats span{font-size:var(--fs-xs);color:var(--c-mute);}
+.hero-visual{position:relative;aspect-ratio:4/3.4;}
+.hero-visual svg{width:100%;height:100%;}
+.float-chip{
+  position:absolute;background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-m);box-shadow:var(--shadow-m);padding:8px 12px;
+  font-size:var(--fs-xs);color:var(--c-ink-soft);line-height:1.5;
+}
+.float-chip b{color:var(--c-ink);display:block;font-size:var(--fs-s);}
+.chip-a{top:4%;right:2%;}
+.chip-b{bottom:8%;left:0;}
+.chip-c{bottom:28%;right:-4%;}
+
+/* 主布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-6);padding-bottom:var(--sp-8);align-items:start;}
+.main-col{min-width:0;}
+.side-col{min-width:0;position:sticky;top:calc(var(--header-h) + var(--notice-h) + 20px);}
+section[id]{scroll-margin-top:calc(var(--header-h) + var(--notice-h) + 14px);}
+.block{margin-bottom:var(--sp-7);}
+.block-head{display:flex;align-items:baseline;gap:var(--sp-3);margin-bottom:var(--sp-4);flex-wrap:wrap;}
+.block-head h2{font-size:var(--fs-l);}
+.block-head .kicker{font-size:var(--fs-xs);color:var(--c-main-deep);letter-spacing:2px;font-weight:700;}
+.block-head .more{margin-left:auto;font-size:var(--fs-s);color:var(--c-mute);}
+.block-head .more:hover{color:var(--c-main-deep);}
+.lead{color:var(--c-ink-soft);font-size:var(--fs-s);margin-bottom:var(--sp-4);}
+
+/* 概览卡组 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3);}
+.ov-card{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);
+  padding:var(--sp-4);box-shadow:var(--shadow-s);
+}
+.ov-card h3{font-size:var(--fs-base);margin-bottom:6px;}
+.ov-card p{font-size:var(--fs-s);color:var(--c-ink-soft);margin:0;}
+.ov-card .num{font-size:var(--fs-xl);font-weight:800;color:var(--c-main);line-height:1;display:block;margin-bottom:6px;}
+
+/* 精选卡片 */
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-4);}
+.f-card{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-l);
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-s);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.f-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);}
+.f-card .thumb{aspect-ratio:16/9;overflow:hidden;background:var(--c-warm);}
+.f-card .thumb img{width:100%;height:100%;object-fit:cover;}
+.f-card .body{padding:var(--sp-4);display:flex;flex-direction:column;gap:6px;flex:1;}
+.f-card .meta{font-size:var(--fs-xs);color:var(--c-mute);display:flex;gap:10px;flex-wrap:wrap;}
+.f-card h3{font-size:var(--fs-m);line-height:1.45;}
+.f-card h3 a{color:var(--c-ink);}
+.f-card h3 a:hover{color:var(--c-main-deep);text-decoration:none;}
+.f-card p{font-size:var(--fs-s);color:var(--c-ink-soft);margin:0;}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px;}
+.tag{
+  font-size:var(--fs-xs);background:var(--c-accent-soft);color:var(--c-accent);
+  border-radius:999px;padding:2px 10px;border:1px solid #cbe3d9;
+}
+.tag.warm{background:#fde8e2;color:var(--c-main-deep);border-color:#f6c9bc;}
+
+/* 最新更新紧凑列表 */
+.update-list{list-style:none;padding:0;margin:0;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);overflow:hidden;}
+.update-list li{display:grid;grid-template-columns:86px 1fr auto;gap:var(--sp-3);padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--c-line);align-items:baseline;}
+.update-list li:last-child{border-bottom:none;}
+.update-list time{font-size:var(--fs-xs);color:var(--c-main-deep);font-weight:700;font-variant-numeric:tabular-nums;}
+.update-list .t{font-size:var(--fs-s);color:var(--c-ink);}
+.update-list .t b{font-weight:600;}
+.update-list .len{font-size:var(--fs-xs);color:var(--c-mute);white-space:nowrap;}
+.badge-new{font-size:10px;background:var(--c-main);color:#fff;border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:1px;font-weight:600;}
+
+/* 分类索引 */
+.cat-index{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3);}
+.cat-item{
+  display:block;background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4);color:var(--c-ink);
+  transition:border-color .15s,background .15s;
+}
+.cat-item:hover{border-color:var(--c-main);background:#fffaf7;text-decoration:none;}
+.cat-item b{display:block;font-size:var(--fs-s);}
+.cat-item span{font-size:var(--fs-xs);color:var(--c-mute);}
+
+/* 深度解析 */
+.article{
+  background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-l);padding:var(--sp-6);box-shadow:var(--shadow-s);
+}
+.article-head{border-bottom:1px dashed var(--c-line);padding-bottom:var(--sp-4);margin-bottom:var(--sp-5);}
+.article-head h2{font-size:var(--fs-xl);margin-bottom:var(--sp-2);}
+.article-head .meta{font-size:var(--fs-xs);color:var(--c-mute);display:flex;gap:14px;flex-wrap:wrap;}
+.article h3{font-size:var(--fs-m);margin:var(--sp-5) 0 var(--sp-2);padding-left:12px;border-left:4px solid var(--c-main);}
+.article p{color:#332a24;}
+.article .compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);margin:var(--sp-4) 0;
+  border:1px solid var(--c-line);border-radius:var(--radius-m);overflow:hidden;
+}
+.article .compare > div{padding:var(--sp-3) var(--sp-4);font-size:var(--fs-s);}
+.article .compare > div:first-child{background:#fdf1ee;border-right:1px solid var(--c-line);}
+.article .compare > div:last-child{background:var(--c-accent-soft);}
+.article .compare h4{font-size:var(--fs-s);margin-bottom:6px;}
+.article .compare ul{margin:0;padding-left:1.1em;color:var(--c-ink-soft);}
+.quote{
+  border-left:4px solid var(--c-accent);background:#f3f8f6;
+  padding:var(--sp-3) var(--sp-4);border-radius:0 var(--radius-m) var(--radius-m) 0;
+  font-size:var(--fs-s);color:#2c4a44;margin:var(--sp-4) 0;
+}
+.checklist{list-style:none;padding:0;margin:var(--sp-3) 0;border:1px solid var(--c-line);border-radius:var(--radius-m);overflow:hidden;}
+.checklist li{padding:var(--sp-2) var(--sp-4);border-bottom:1px solid var(--c-line);font-size:var(--fs-s);display:flex;gap:10px;align-items:flex-start;}
+.checklist li:last-child{border-bottom:none;}
+.checklist b{color:var(--c-main-deep);flex:none;font-variant-numeric:tabular-nums;}
+
+/* 体验指南步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-3);}
+.steps li{
+  position:relative;background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-m);padding:var(--sp-4) var(--sp-4) var(--sp-4) 58px;
+}
+.steps li::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  position:absolute;left:var(--sp-4);top:var(--sp-4);
+  font-size:var(--fs-m);font-weight:800;color:var(--c-main);font-variant-numeric:tabular-nums;
+}
+.steps b{display:block;font-size:var(--fs-s);margin-bottom:2px;}
+.steps span{font-size:var(--fs-s);color:var(--c-ink-soft);}
+
+/* FAQ */
+.faq details{
+  background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-m);margin-bottom:var(--sp-2);overflow:hidden;
+}
+.faq summary{
+  padding:var(--sp-3) var(--sp-4);font-weight:600;font-size:var(--fs-s);
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:18px;color:var(--c-main);flex:none;transition:transform .2s;}
+.faq details[open] summary::after{transform:rotate(45deg);}
+.faq details[open] summary{background:#fffaf7;}
+.faq .ans{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-s);color:var(--c-ink-soft);}
+.faq .ans p{margin:0;}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);}
+.cmt{
+  background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--radius-m);padding:var(--sp-4);font-size:var(--fs-s);
+}
+.cmt-top{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.avatar{
+  width:28px;height:28px;border-radius:50%;background:var(--c-warm);
+  display:grid;place-items:center;font-size:var(--fs-xs);font-weight:700;color:var(--c-main-deep);flex:none;
+}
+.cmt-top b{font-size:var(--fs-s);}
+.cmt-top time{font-size:var(--fs-xs);color:var(--c-mute);margin-left:auto;}
+.cmt p{margin:0;color:#3b322c;}
+.cmt .ref{display:inline-block;font-size:var(--fs-xs);color:var(--c-accent);background:var(--c-accent-soft);border-radius:4px;padding:0 6px;margin-right:4px;}
+
+/* 资讯 */
+.news-list{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);}
+.news-item{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);
+  padding:var(--sp-4);
+}
+.news-item .src{font-size:var(--fs-xs);color:var(--c-main-deep);letter-spacing:.5px;}
+.news-item h3{font-size:var(--fs-s);margin:4px 0 6px;}
+.news-item p{font-size:var(--fs-xs);color:var(--c-ink-soft);margin:0;line-height:1.7;}
+
+/* 相关推荐标签索引 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:var(--sp-2);}
+.rec-tags a{
+  font-size:var(--fs-s);background:var(--c-surface);border:1px solid var(--c-line);
+  color:var(--c-ink-soft);border-radius:999px;padding:5px 14px;transition:.15s;
+}
+.rec-tags a:hover{border-color:var(--c-accent);color:var(--c-accent);text-decoration:none;}
+.rec-tags a em{font-style:normal;color:var(--c-mute);font-size:var(--fs-xs);margin-left:6px;}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative;}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--c-line);}
+.timeline li{position:relative;padding:0 0 var(--sp-4) var(--sp-5);}
+.timeline li:last-child{padding-bottom:0;}
+.timeline li::before{
+  content:"";position:absolute;left:2px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--c-surface);border:3px solid var(--c-main);
+}
+.timeline time{font-size:var(--fs-xs);color:var(--c-main-deep);font-weight:700;display:block;}
+.timeline b{font-size:var(--fs-s);display:block;}
+.timeline span{font-size:var(--fs-s);color:var(--c-ink-soft);}
+
+/* 侧栏 */
+.side-card{
+  background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-m);
+  padding:var(--sp-4);margin-bottom:var(--sp-4);
+}
+.side-card h2,.side-card h3{font-size:var(--fs-s);margin-bottom:var(--sp-3);letter-spacing:.5px;}
+.side-nav{list-style:none;padding:0;margin:0;font-size:var(--fs-s);}
+.side-nav li{margin-bottom:2px;}
+.side-nav a{
+  display:block;padding:6px 10px;border-radius:var(--radius-s);color:var(--c-ink-soft);
+  border-left:3px solid transparent;transition:.15s;
+}
+.side-nav a:hover{background:var(--c-warm);color:var(--c-ink);text-decoration:none;}
+.side-nav a.active{background:#fdf1ee;border-left-color:var(--c-main);color:var(--c-main-deep);font-weight:600;}
+.rank-list{list-style:none;padding:0;margin:0;font-size:var(--fs-s);}
+.rank-list li{display:flex;gap:10px;padding:7px 0;border-bottom:1px dashed var(--c-line);align-items:baseline;}
+.rank-list li:last-child{border-bottom:none;}
+.rank-list .no{font-weight:800;color:var(--c-main);font-variant-numeric:tabular-nums;flex:none;width:20px;}
+.rank-list a{color:var(--c-ink);}
+.rank-list small{color:var(--c-mute);font-size:var(--fs-xs);margin-left:auto;white-space:nowrap;}
+.side-note{font-size:var(--fs-xs);color:var(--c-mute);line-height:1.7;margin:0;}
+
+/* 页脚 */
+footer{background:#241c17;color:#d8ccc0;padding:var(--sp-7) 0 var(--sp-5);font-size:var(--fs-s);}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5);}
+footer h3{font-size:var(--fs-s);color:#f0e4d6;margin-bottom:var(--sp-3);letter-spacing:1px;}
+footer .f-brand{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-3);}
+footer .f-brand svg{width:30px;height:30px;}
+footer .f-brand b{font-size:var(--fs-m);color:#fff;}
+footer .f-desc{color:#a99a8c;font-size:var(--fs-s);line-height:1.7;max-width:26em;}
+footer ul{list-style:none;padding:0;margin:0;}
+footer li{margin-bottom:6px;}
+footer a{color:#c9b9aa;font-size:var(--fs-xs);}
+footer a:hover{color:#fff;}
+.footer-bottom{
+  border-top:1px solid #3a2e26;margin-top:var(--sp-5);padding-top:var(--sp-4);
+  display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:space-between;
+  font-size:var(--fs-xs);color:#8d7f74;
+}
+.sample-note{background:#2f2620;border-radius:var(--radius-s);padding:10px 14px;font-size:var(--fs-xs);color:#a99a8c;line-height:1.7;margin-top:var(--sp-4);}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;
+  background:var(--c-main);color:#fff;border:none;display:none;place-items:center;
+  cursor:pointer;box-shadow:var(--shadow-m);z-index:60;font-size:18px;
+}
+#toTop.show{display:grid;}
+#toTop:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px;}
+
+/* 平板 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr;}
+  .side-col{position:static;margin-top:var(--sp-4);}
+  .hero .wrap{grid-template-columns:1fr;}
+  .hero-visual{max-width:420px;margin-inline:auto;width:100%;}
+  .overview-grid,.cat-index{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  :root{--header-h:56px;--fs-xxl:32px;--fs-xl:26px;--sp-7:32px;}
+  .main-nav{
+    display:none;position:absolute;left:0;right:0;top:calc(var(--header-h) + var(--notice-h));
+    background:var(--c-surface);border-bottom:1px solid var(--c-line);
+    padding:var(--sp-3) var(--sp-4);box-shadow:var(--shadow-m);margin:0;flex-direction:column;
+  }
+  .main-nav.open{display:flex;}
+  .main-nav a{padding:10px 8px;font-size:var(--fs-base);}
+  .menu-btn{display:inline-flex;}
+  .search-form input{width:96px;}
+  .feature-grid,.comments,.news-list{grid-template-columns:1fr;}
+  .update-list li{grid-template-columns:72px 1fr;gap:6px var(--sp-3);}
+  .update-list .len{grid-column:2;color:var(--c-mute);}
+  .article{padding:var(--sp-4);}
+  .article .compare{grid-template-columns:1fr;}
+  .article .compare > div:first-child{border-right:none;border-bottom:1px solid var(--c-line);}
+  .footer-grid{grid-template-columns:1fr;}
+  .cat-index{grid-template-columns:1fr 1fr;}
+  .float-chip{font-size:10px;padding:6px 9px;}
+  .hero-stats{gap:var(--sp-4);}
+}
+@media (max-width:380px){
+  .wrap{width:calc(100% - 24px);}
+  .brand-text{font-size:14px;}
+  .search-form input{width:72px;}
+  .overview-grid,.cat-index{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-group">
+  <div class="notice-bar">
+    <div class="wrap">
+      <span class="notice-tag">公告</span>
+      <p class="notice-text">11月6日 21:40 更新：<b>1分48秒竖屏新片</b>已上线，附英文和日文两版字幕；本周三直播切片第3段补传完成。</p>
+      <a href="#updates">查看更新</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/#hero" aria-label="返回首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="小小绘推特最新视频标志">
+          <rect width="64" height="64" rx="14" fill="#e2543a"/>
+          <path d="M18 44 L32 16 L46 44" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="47" r="4" fill="#ffe0a8"/>
+          <path d="M28 36 L38 36" stroke="#ffe0a8" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">小小绘推特最新视频<small>VIDEO TRACKER</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="#overview">领域概览</a>
+        <a href="#featured">精选推荐</a>
+        <a href="#updates">最新更新</a>
+        <a href="#categories">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">体验指南</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search-form" role="search" id="searchForm">
+          <input type="search" id="searchInput" placeholder="搜索条目" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">
+            <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="#fff" stroke-width="2" fill="none"/><path d="M11 11 L15 15" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+          <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          菜单
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<p class="search-status" id="searchStatus" role="status" aria-live="polite"></p>
+
+<main id="main">
+  <!-- 首屏 -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="hero-badge"><i></i>按发布日追踪 · 最近更新 11月6日</span>
+        <h1>小小绘推特最新视频<span>更新索引</span></h1>
+        <p class="hero-desc">把推特上分散的短片段、直播切片、幕后花絮按发布日期和时间线收拢起来。每条记录标注时长、画质、是否带字幕、原推文编号前四位，方便回看与比对，不做搬运，只做索引。</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#updates">看最新更新</a>
+          <a class="btn btn-ghost" href="#deep">读深度解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>87</b><span>已索引短片</span></div>
+          <div><b>24</b><span>直播切片</span></div>
+          <div><b>6</b><span>本周新增</span></div>
+          <div><b>2026-11-08</b><span>索引更新日</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 340" role="img" aria-label="视频时间线示意构图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f7e3c6"/><stop offset="1" stop-color="#fde8e2"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="18" width="372" height="304" rx="22" fill="url(#g1)"/>
+          <rect x="46" y="52" width="214" height="120" rx="12" fill="#fff" stroke="#e6dcd0"/>
+          <circle cx="88" cy="88" r="16" fill="#e2543a"/>
+          <path d="M84 82 L96 88 L84 94 Z" fill="#fff"/>
+          <rect x="116" y="76" width="112" height="8" rx="4" fill="#e6dcd0"/>
+          <rect x="116" y="92" width="76" height="8" rx="4" fill="#f0d9c6"/>
+          <rect x="62" y="124" width="182" height="6" rx="3" fill="#f0e3d6"/>
+          <rect x="62" y="136" width="140" height="6" rx="3" fill="#f0e3d6"/>
+          <rect x="46" y="196" width="308" height="34" rx="10" fill="#fff" stroke="#e6dcd0"/>
+          <rect x="58" y="208" width="54" height="10" rx="5" fill="#e2543a"/>
+          <rect x="124" y="208" width="88" height="10" rx="5" fill="#e6dcd0"/>
+          <rect x="224" y="208" width="52" height="10" rx="5" fill="#e6dcd0"/>
+          <rect x="288" y="208" width="42" height="10" rx="5" fill="#cbe3d9"/>
+          <rect x="46" y="244" width="146" height="58" rx="10" fill="#fff" stroke="#e6dcd0"/>
+          <rect x="208" y="244" width="146" height="58" rx="10" fill="#2c6e63"/>
+          <circle cx="70" cy="266" r="8" fill="#f7e3c6"/>
+          <rect x="86" y="260" width="82" height="7" rx="3.5" fill="#e6dcd0"/>
+          <rect x="86" y="274" width="60" height="7" rx="3.5" fill="#f0e3d6"/>
+          <rect x="226" y="262" width="98" height="7" rx="3.5" fill="#7fb3a7"/>
+          <rect x="226" y="276" width="72" height="7" rx="3.5" fill="#4f8a7e"/>
+          <path d="M330 116 l16 30 l-20 -6 l-14 8 z" fill="#e2543a" opacity=".9"/>
+        </svg>
+        <div class="float-chip chip-a"><b>X7q…48s</b>最新短片 · 11/6</div>
+        <div class="float-chip chip-b"><b>24 段</b>直播切片已校对</div>
+        <div class="float-chip chip-c"><b>1080p</b>本周主流清晰度</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <span class="kicker">OVERVIEW</span>
+          <h2>领域概览：推特视频都长什么样</h2>
+        </div>
+        <p class="lead">推特上的内容并不统一：同一账号会混发竖屏短片、横屏直播切片、图文配短视频三类。先把形态分清，再谈“最新”才有意义。</p>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <span class="num">01</span>
+            <h3>竖屏预先剪辑短片</h3>
+            <p>时长多在35秒到2分钟，比例9:16，带固定片尾水印。11月4日那条1分12秒的厨房片段就是这一类，推文编号X6n开头。</p>
+          </div>
+          <div class="ov-card">
+            <span class="num">02</span>
+            <h3>直播切片横屏版</h3>
+            <p>来自每周三、周六晚的直播，5到15分钟，画面右下常带弹幕互动区。10月31日万圣节场切出4段，最长一段11分20秒。</p>
+          </div>
+          <div class="ov-card">
+            <span class="num">03</span>
+            <h3>图文配数秒短片</h3>
+            <p>用于公告或预告，10秒内，信息密度低。11月2日发布的周年预告就是8秒动态字卡，不含正片内容。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="block" id="featured">
+        <div class="block-head">
+          <span class="kicker">PICKS</span>
+          <h2>精选内容推荐</h2>
+          <a class="more" href="#updates">全部更新 →</a>
+        </div>
+        <div class="feature-grid">
+          <article class="f-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/xiaoxiaohui-vent/640/360" width="640" height="360" loading="lazy" alt="竖屏短片截图：室内桌面与打开的手账本">
+            </div>
+            <div class="body">
+              <div class="meta"><span>2026-11-06</span><span>1分48秒</span><span>1080×1920</span></div>
+              <h3><a href="/#updates">深夜手账翻页片段 · 带中日字幕</a></h3>
+              <p>全片一镜到底，第37秒出现手写便签特写。评论区里对便签字迹是否为本人有争论，暂无回应。</p>
+              <div class="tag-row"><span class="tag">竖屏短片</span><span class="tag warm">带字幕</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/xiaoxiaohui-live/640/360" width="640" height="360" loading="lazy" alt="横屏直播画面：桌面麦克风与暖色台灯">
+            </div>
+            <div class="body">
+              <div class="meta"><span>2026-10-31</span><span>11分20秒</span><span>1920×1080</span></div>
+              <h3><a href="/#updates">万圣节直播切片第2段 · 角色配音环节</a></h3>
+              <p>切片从直播第41分钟切入，含3次观众连麦。原直播时长2小时06分，完整回放未在推特发布。</p>
+              <div class="tag-row"><span class="tag">直播切片</span><span class="tag">连麦互动</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/xiaoxiaohui-draw/640/360" width="640" height="360" loading="lazy" alt="俯拍手绘过程：彩色铅笔与半成品插画">
+            </div>
+            <div class="body">
+              <div class="meta"><span>2026-10-28</span><span>2分03秒</span><span>1080×1920</span></div>
+              <h3><a href="/#updates">线稿上色加速版 · 6倍速无解说</a></h3>
+              <p>时长超过两分钟，是近期少见的“长”竖屏。上色阶段在第58秒进入，原速版本未公开。</p>
+              <div class="tag-row"><span class="tag">手绘过程</span><span class="tag warm">加速版</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/xiaoxiaohui-travel/640/360" width="640" height="360" loading="lazy" alt="街景短片截图：雨后路面与人行道反光">
+            </div>
+            <div class="body">
+              <div class="meta"><span>2026-10-25</span><span>46秒</span><span>1080×1920</span></div>
+              <h3><a href="/#updates">雨后街道随拍 · 无配乐原声</a></h3>
+              <p>原声收录环境噪声，第12秒有自行车铃声。评论里提到拍摄地与10月18日那条同一条街。</p>
+              <div class="tag-row"><span class="tag">生活随拍</span><span class="tag">原声</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="updates">
+        <div class="block-head">
+          <span class="kicker">UPDATES</span>
+          <h2>最新更新记录</h2>
+        </div>
+        <p class="lead">按推文发布时间降序，仅收录可公开访问的条目。时长与画质取自实际播放信息，未经二次压缩估计。</p>
+        <ul class="update-list">
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <span class="t"><b>深夜手账翻页片段</b><span class="badge-new">新</span> · 竖屏，中日字幕</span>
+            <span class="len">1分48秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11月5日</time>
+            <span class="t"><b>直播切片补传第3段</b> · 横屏，含2次问答</span>
+            <span class="len">6分14秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11月4日</time>
+            <span class="t"><b>厨房备菜速览</b> · 竖屏，无字幕</span>
+            <span class="len">1分12秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-11-02">11月2日</time>
+            <span class="t"><b>周年预告动态字卡</b> · 竖屏，8秒信息卡</span>
+            <span class="len">8秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-10-31">10月31日</time>
+            <span class="t"><b>万圣节直播切片第2段</b> · 横屏，角色配音</span>
+            <span class="len">11分20秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-10-28">10月28日</time>
+            <span class="t"><b>线稿上色加速版</b> · 竖屏，6倍速</span>
+            <span class="len">2分03秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-10-25">10月25日</time>
+            <span class="t"><b>雨后街道随拍</b> · 竖屏，原声</span>
+            <span class="len">46秒 / 1080p</span>
+          </li>
+          <li>
+            <time datetime="2026-10-22">10月22日</time>
+            <span class="t"><b>问答征集结果朗读</b> · 竖屏，单人出镜</span>
+            <span class="len">2分26秒 / 1080p</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block" id="categories">
+        <div class="block-head">
+          <span class="kicker">CHANNELS</span>
+          <h2>分类入口</h2>
+        </div>
+        <div class="cat-index">
+          <a class="cat-item" href="/#updates"><b>竖屏短片</b><span>已收录 52 条</span></a>
+          <a class="cat-item" href="/#updates"><b>直播切片回放</b><span>已收录 24 条</span></a>
+          <a class="cat-item" href="/#updates"><b>手绘与上色过程</b><span>已收录 17 条</span></a>
+          <a class="cat-item" href="/#updates"><b>生活随拍与街景</b><span>已收录 11 条</span></a>
+          <a class="cat-item" href="/#updates"><b>问答与连麦录音</b><span>已收录 9 条</span></a>
+          <a class="cat-item" href="/#updates"><b>预告与动态字卡</b><span>已收录 6 条</span></a>
+          <a class="cat-item" href="/#updates"><b>字幕版本对照</b><span>已收录 4 组</span></a>
+          <a class="cat-item" href="/#updates"><b>剪辑版本差异</b><span>已收录 3 组</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="block" id="deep">
+        <article class="article">
+          <div class="article-head">
+            <span class="kicker">ANALYSIS</span>
+            <h2>深度解析：三条“新片”里，只有一条是首次发布</h2>
+            <div class="meta"><span>2026-11-07 修订</span><span>依据：推文发布时间戳、账号历史、评论区转述</span></div>
+          </div>
+
+          <p>把11月2日到11月7日之间的三条视频放在一起看，容易被当成“三天连更”。核对时间戳后会得到另一个结论：只有11月6日的手账片段是首次发布，另外两条属于补传和重新剪辑。这个判断可以反驳——只要找到更早的原始发布记录即可推翻。</p>
+
+          <h3>一、时间戳对比：首发、补传、重剪各自对应哪条</h3>
+          <p>11月6日21:40的推文编号X7q开头，评论区首条留言在两分钟内出现，符合首发特征。11月5日的直播切片编号X7m，但对应直播发生在10月29日，间隔7天，属于延迟补传。11月4日的厨房片段编号X6n，画面右下角水印样式与10月12日旧版一致，判定为旧素材重剪。</p>
+          <div class="compare">
+            <div>
+              <h4>可核对项</h4>
+              <ul>
+                <li>推文编号前缀：X7q / X7m / X6n</li>
+                <li>发布间隔：当天 / 7天 / 23天</li>
+                <li>水印样式：新版 / 新版 / 旧版</li>
+              </ul>
+            </div>
+            <div>
+              <h4>解读</h4>
+              <ul>
+                <li>首发：评论在两分钟内出现</li>
+                <li>补传：直播日期早于发布时间</li>
+                <li>重剪：水印版本落后一个周期</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>二、时长与清晰度的实际分布：短不等于新</h3>
+          <p>统计最近30天可访问的32条记录，40秒以内的占14条，其中9条发布在10月20日之前。说明“短”更多与内容形态有关，而非新鲜度。清晰度方面，1080p占27条，720p集中在10月15日到10月22日之间发布的5条，那段时间上传端网络受限的说法来自作者10月18日的一条文字推文。</p>
+          <p>由此得出的可核对判断是：如果希望第一时间看到新内容，应优先看时长在两分钟上下、编号前缀最新的条目，而不是按播放量排序。10月31日直播切片播放量最高，但它距直播结束已过6天。</p>
+
+          <h3>三、关于“便签字迹”的争议：事实、回应、转述分开看</h3>
+          <p>11月6日片段第37秒的便签，评论区有用户提出字迹与作者平时手写不同。目前可确认的事实只有三点：便签出现在画面中、拍摄角度为俯拍、作者本人未在该条推文下回复。转述层面，有账号称“是工作人员代写”，未提供截图或来源。推测层面，另一种说法认为便签是拍摄前数日写好、墨水颜色变化导致观感差异。三种说法信息量不同，不能并列当作事实使用。</p>
+          <div class="quote">“把三种说法并排放，容易让人误以为它们权重相同。实际上只有第一条有画面佐证，后两条都缺原始材料。”——来自10月30日一条社区讨论帖的转述</div>
+
+          <h3>四、可复核的判断清单</h3>
+          <p>把上面三条结论拆成可逐项核对的结构，任何人都能按同一顺序验证，不需要依赖单一来源。</p>
+          <ul class="checklist">
+            <li><b>01</b><span>打开推文详情页，记录编号前缀与精确到分钟的发布时间。</span></li>
+            <li><b>02</b><span>对照直播日程表，确认切片所对应的直播日期，计算间隔。</span></li>
+            <li><b>03</b><span>放大画面右下角，比对水印版式，与相邻月份条目横向对照。</span></li>
+            <li><b>04</b><span>查阅作者该周的文字推文，看是否提到上传或剪辑安排。</span></li>
+            <li><b>05</b><span>若结论与社区说法冲突，标注冲突点，不合并为单一叙述。</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <span class="kicker">GUIDE</span>
+          <h2>体验指南：六步看完一周更新</h2>
+        </div>
+        <ol class="steps">
+          <li><b>先看公告时间</b><span>顶部公告条写的是最近一次索引变动，不是视频发布时间。两者相差通常在几小时内。</span></li>
+          <li><b>按编号排序而非播放量</b><span>编号前缀越大越新。播放量受转发影响，10月31日切片就是被转发推高的例子。</span></li>
+          <li><b>确认字幕版本</b><span>11月6日片段提供中日两版字幕，切换后时长不变，但第37秒的便签说明文字会不同。</span></li>
+          <li><b>横屏切片先看时间码</b><span>每段切片开头标注原直播分钟数，例如“41:00”，可据此判断是否与上一段重叠。</span></li>
+          <li><b>核对画质标注</b><span>720p条目集中在10月中旬，若设备支持，优先选1080p版本以减少画面裁切误判。</span></li>
+          <li><b>遇到播放失败先换端</b><span>网页端与客户端各试一次，再切换网络。多数情况是缓存问题，等待10分钟后重试即可。</span></li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head">
+          <span class="kicker">FAQ</span>
+          <h2>常见问题</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>小小绘推特最新视频是什么时间发布的？</summary>
+            <div class="ans"><p>截至2026年11月8日，最近一条为11月6日21:40发布的1分48秒竖屏短片，推文编号以X7q开头，发布账号为本人认证账号。再往前是11月5日补传的6分14秒直播切片。</p></div>
+          </details>
+          <details>
+            <summary>推特视频无法播放怎么解决？</summary>
+            <div class="ans"><p>先在网页端与客户端各试一次。若均卡在首帧，多为地区缓存问题，切换网络或等待10分钟后重试。若显示版权或不可用提示，则该片段可能已被删除或设为限可见，索引页会保留编号但标注状态。</p></div>
+          </details>
+          <details>
+            <summary>如何分辨转载视频是否为原片？</summary>
+            <div class="ans"><p>核对推文编号与发布时间。原片通常保留完整时长与右下角账号水印；搬运号常裁掉边框、加自站片头，并把时长截到30秒以内。11月4日厨房片段就有多个截短版本在流传。</p></div>
+          </details>
+          <details>
+            <summary>直播切片与推特短片有什么区别？</summary>
+            <div class="ans"><p>推特短片多为预先剪辑的竖屏内容，2分钟以内；直播切片来自每周三、周六晚的直播，横屏为主，常见5到15分钟，画面中会出现弹幕互动区。10月31日万圣节场共切出4段。</p></div>
+          </details>
+          <details>
+            <summary>字幕版本不同会影响观看顺序吗？</summary>
+            <div class="ans"><p>不影响顺序，但会影响细节理解。11月6日片段的中日两版字幕在第37秒便签说明处措辞不同，先看哪版都可以，若要做逐帧比对，建议固定使用同一版本。</p></div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <span class="kicker">VOICES</span>
+          <h2>用户评论</h2>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">岚</span><b>岚川</b><time>11月7日</time></div>
+            <p><span class="ref">11/6 手账片段</span>第37秒的便签放大后确实能看清三行字，但第三行被手挡住了，讨论里说“写了四行”的估计是数错了。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">柯</span><b>柯基不加班</b><time>11月6日</time></div>
+            <p>补传的第3段切片终于能接上10月29日直播的问答部分了，6分14秒那段从41分钟切入，正好补上之前漏的两次提问。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">豆</span><b>豆沙包</b><time>11月5日</time></div>
+            <p>1080p是好事，但竖屏在电脑上看两边黑边太宽，能不能出个横屏适配版。这条纯吐槽，不针对内容。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">赛</span><b>赛博路人</b><time>11月4日</time></div>
+            <p><span class="ref">厨房片段</span>水印样式和10月12日那条一样，剪得也像旧素材，标题写“新”有点误导。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">半</span><b>半糖去冰</b><time>11月3日</time></div>
+            <p>周年预告那条8秒字卡信息量太低，看完不知道具体日期，还得翻别的推文确认。</p>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">青</span><b>青柠气泡</b><time>11月2日</time></div>
+            <p>索引页把时长和画质写清楚这点挺实用，比在评论区问“多长”省事。要是能标一下是否含广告就更好。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <span class="kicker">NEWS</span>
+          <h2>相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="src">10月30日 · 社区公告</span>
+            <h3>问答征集帖收到214条回复</h3>
+            <p>10月22日朗读片段中提到的征集活动已结束，组织者称将从214条回复中选12条，在下一次直播中作答。</p>
+          </div>
+          <div class="news-item">
+            <span class="src">10月29日 · 直播日程</span>
+            <h3>万圣节场直播持续2小时06分</h3>
+            <p>当晚连麦5人，角色配音环节集中在第41分钟到第52分钟，切片第2段即取自这一区间。</p>
+          </div>
+          <div class="news-item">
+            <span class="src">10月26日 · 账号动态</span>
+            <h3>账号启用新水印版式</h3>
+            <p>10月26日后的短片右下角水印改为圆角细线框，旧版为实心描边。这一变化可用于区分素材新旧。</p>
+          </div>
+          <div class="news-item">
+            <span class="src">10月18日 · 文字推文</span>
+            <h3>上传端网络受限，部分条目降为720p</h3>
+            <p>作者称10月中旬上传速度不稳，720p条目集中在那段时间；到10月24日后恢复1080p，证据为相邻条目分辨率对比。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block" id="related">
+        <div class="block-head">
+          <span class="kicker">RELATED</span>
+          <h2>相关推荐</h2>
+        </div>
+        <div class="rec-tags">
+          <a href="/#deep">便签字迹争议核对<em>方法</em></a>
+          <a href="/#updates">直播切片时间码对照<em>列表</em></a>
+          <a href="/#updates">竖屏短片字幕版本差异<em>3组</em></a>
+          <a href="/#news">新水印版式启用时间<em>10/26</em></a>
+          <a href="/#faq">推特视频无法播放自查<em>步骤</em></a>
+          <a href="/#updates">手绘上色加速版回看<em>10/28</em></a>
+          <a href="/#guide">一周更新观看顺序<em>指南</em></a>
+          <a href="/#comments">厨房片段重剪讨论<em>评论</em></a>
+        </div>
+      </section>
+
+      <!-- 时间线 -->
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <span class="kicker">TIMELINE</span>
+          <h2>近两周更新时间线</h2>
+        </div>
+        <ul class="timeline">
+          <li><time datetime="2026-11-06">11月6日 21:40</time><b>深夜手账翻页片段</b><span>竖屏1分48秒，中日双字幕，编号X7q。</span></li>
+          <li><time datetime="2026-11-05">11月5日 14:10</time><b>直播切片补传第3段</b><span>横屏6分14秒，对应10月29日直播第41分钟。</span></li>
+          <li><time datetime="2026-11-04">11月4日 19:25</time><b>厨房备菜速览</b><span>竖屏1分12秒，旧水印版式，判定为重剪。</span></li>
+          <li><time datetime="2026-11-02">11月2日 12:00</time><b>周年预告动态字卡</b><span>竖屏8秒，不含正片内容。</span></li>
+          <li><time datetime="2026-10-31">10月31日 22:05</time><b>万圣节直播切片第2段</b><span>横屏11分20秒，角色配音与连麦。</span></li>
+          <li><time datetime="2026-10-28">10月28日 20:30</time><b>线稿上色加速版</b><span>竖屏2分03秒，6倍速无解说。</span></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="#overview">领域概览</a></li>
+          <li><a href="#featured">精选内容推荐</a></li>
+          <li><a href="#updates">最新更新记录</a></li>
+          <li><a href="#categories">分类入口</a></li>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">体验指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#comments">用户评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#related">相关推荐</a></li>
+          <li><a href="#timeline">更新时间线</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>本周观看榜</h3>
+        <ol class="rank-list">
+          <li><span class="no">1</span><a href="/#featured">万圣节切片第2段</a><small>11分20秒</small></li>
+          <li><span class="no">2</span><a href="/#featured">深夜手账翻页</a><small>11/6</small></li>
+          <li><span class="no">3</span><a href="/#featured">线稿上色加速版</a><small>2分03秒</small></li>
+          <li><span class="no">4</span><a href="/#featured">直播切片补传第3段</a><small>6分14秒</small></li>
+          <li><span class="no">5</span><a href="/#featured">雨后街道随拍</a><small>46秒</small></li>
+        </ol>
+      </div>
+      <div class="side-card">
+        <h3>索引说明</h3>
+        <p class="side-note">时长、画质取自实际播放信息；编号前缀用于排序，不代表官方编号。文中所列账号名、日期与条目均为示例数据，仅用于展示索引结构与核对方法。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="站点标志">
+            <rect width="64" height="64" rx="14" fill="#e2543a"/>
+            <path d="M18 44 L32 16 L46 44" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="47" r="4" fill="#ffe0a8"/>
+          </svg>
+          <b>小小绘推特最新视频</b>
+        </div>
+        <p class="f-desc">按发布日期与编号前缀整理短片、切片与花絮，标注时长、画质与字幕状态，供回看与比对使用。</p>
+      </div>
+      <div>
+        <h3>内容栏目</h3>
+        <ul>
+          <li><a href="/#overview">形态概览</a></li>
+          <li><a href="/#featured">精选条目</a></li>
+          <li><a href="/#updates">更新记录</a></li>
+          <li><a href="/#categories">分类索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>核对方法</h3>
+        <ul>
+          <li><a href="/#deep">时间戳对比</a></li>
+          <li><a href="/#deep">水印版式判断</a></li>
+          <li><a href="/#guide">观看顺序</a></li>
+          <li><a href="/#faq">播放问题自查</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区互动</h3>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#timeline">更新时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sample-note">示例数据说明：页面中出现的推文编号、账号名、评论昵称、日期与播放条目均为演示用途，用于展示索引结构与核对流程，不指向真实发布记录。</div>
+    <div class="footer-bottom">
+      <span>© 2026 小小绘推特最新视频索引 · 内容整理与核对方法示例</span>
+      <span>页面更新于 2026-11-08，对应正文“最新更新记录”与“近两周更新时间线”。</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 本地搜索
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var status = document.getElementById('searchStatus');
+  var searchable = Array.prototype.slice.call(document.querySelectorAll('.block h2, .block h3, .update-list .t, .rec-tags a, .faq summary'));
+  function clearMarks(){
+    document.querySelectorAll('mark[data-sr]').forEach(function(m){
+      var t = document.createTextNode(m.textContent);
+      m.parentNode.replaceChild(t, m);
+    });
+  }
+  if(form && input){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim();
+      clearMarks();
+      if(!q){
+        status.style.display='none';
+        status.textContent='';
+        return;
+      }
+      var hits = 0;
+      searchable.forEach(function(el){
+        if(el.textContent.indexOf(q) !== -1){
+          hits++;
+          if(el.closest && el.closest('.faq details')){
+            el.closest('.faq details').open = true;
+          }
+        }
+      });
+      if(hits === 0){
+        status.style.display='block';
+        status.textContent = '没有找到与“' + q + '”匹配的条目，可以试试“切片”“字幕”“手账”“时间线”等词。';
+      } else {
+        status.style.display='block';
+        status.textContent = '找到 ' + hits + ' 处与“' + q + '”相关的内容，已在下方栏目中标注。';
+        searchable.forEach(function(el){
+          if(el.textContent.indexOf(q) !== -1 && el.tagName !== 'SUMMARY' && !el.querySelector('mark')){
+            var html = el.innerHTML;
+            if(html.indexOf('<') === -1 || html.indexOf('<img') !== 0){
+              el.innerHTML = html.split(q).join('<mark data-sr style="background:#fde8e2;color:#b93b26;">' + q + '</mark>');
+            }
+          }
+        });
+      }
+    });
+  }
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    return document.querySelector(a.getAttribute('href').replace('/#','#'));
+  });
+  function onScroll(){
+    var pos = window.scrollY + 140;
+    var idx = -1;
+    targets.forEach(function(t,i){
+      if(t && t.offsetTop <= pos) idx = i;
+    });
+    sideLinks.forEach(function(a,i){
+      a.classList.toggle('active', i === idx);
+    });
+    var top = document.getElementById('toTop');
+    if(top){
+      top.classList.toggle('show', window.scrollY > 500);
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  var top = document.getElementById('toTop');
+  if(top){
+    top.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+  </html>
